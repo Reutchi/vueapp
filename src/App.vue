@@ -5,18 +5,21 @@
     <router-view/>
     <HeroSection/>
   </div>
+    <ProjectsSection/>
+
   </div>
 </template>
 
 <script>
 import HeaderNav from './components/HeaderNav.vue';
 import HeroSection from './components/HeroSection.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
 export default {
   name: "App",
   components: {
     HeaderNav,
     HeroSection,
-   
+    ProjectsSection,
   }
 };
 </script>

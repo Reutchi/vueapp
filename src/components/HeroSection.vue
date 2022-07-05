@@ -80,6 +80,7 @@ export default {
         display: flex;
         justify-content: center;
         cursor: pointer;
+        margin-bottom: 20px;
     }
 
 }
