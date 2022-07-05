@@ -6,12 +6,9 @@
                 </h1>
             </div>
             <div class="hero-desc">
-                <p>👋 My ability to work hard and be consistently reinforced by my willingness to expand my existing knowledge, for that reason I attend many courses both with trainers and online to grow a portfolio that emphasizes my skills.<br/>
-                <br/>  ✨With my knowledge as a web developer, design experience, and a great sense of detail, I will create amazing responsive websites. 🚀
-                </p>
+                <p>With my knowledge as a web developer, design experience, and a great sense of detail, I will create amazing responsive websites. 🚀</p>
             </div>
             <span class="arrow"><img src="../assets/arrow.svg" alt=""></span>
-
         </section>
 </template>
 

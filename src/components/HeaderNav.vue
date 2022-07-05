@@ -7,28 +7,47 @@
         </label>
 
         <ul class="menu__box">
-            <li><router-link class="menu__item" to="/">Home</router-link></li>
-            <li><router-link class="menu__item" to="/about">About</router-link></li>
-            <li><router-link class="menu__item" to="/contact">Contact</router-link></li>
+            <li v-for="item in menu">
+            <router-link class="menu__item" :to="item.path">{{item.name}}</router-link>
+            </li>
         </ul>
       </div>
             
             <div class="navigation">
-            <a href="/"><img src="../assets/logo.svg" alt="logo"></a>
-           
-            <ul>
-              <li><router-link  to="/">Home</router-link></li>
-              <li><router-link to="/about">About</router-link></li>
-              <li><router-link to="/contact">Contact</router-link></li>
-            </ul>
+              <a href="/"><img src="../assets/logo.svg" alt="logo"></a>
+            
+              <ul>
+                  <li v-for="item in menu">
+                    <router-link :to="item.path">{{item.name}}</router-link>
+                  </li>
+              </ul>
             </div>
   </section>
 </template>
 
 <script>
+export default {
+  name:'HeaderNav',
+  data(){
+    return {
+      menu:[
+        {
+          name:'Home',
+          path:'/'
+        },
+         {
+          name:'About',
+          path:'/about'
+        },
+         {
+          name:'Contact',
+          path:'/contact'
+        }
+      ]
+    }
+  }
 
-
-  
+}
 </script>
 
 <style lang="scss" scoped>
